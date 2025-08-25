@@ -150,7 +150,7 @@ async function searchRealEbay(query: string, limit: number) {
       body: new URLSearchParams({
         grant_type: 'refresh_token',
         refresh_token: EBAY_REFRESH_TOKEN,
-        scope: 'https://api.ebay.com/oauth/api_scope'
+        scope: 'https://api.ebay.com/oauth/api_scope https://api.ebay.com/buy/browse'
       })
     });
 
